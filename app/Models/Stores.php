@@ -22,6 +22,6 @@ class Stores extends Model
     
     public function product()
     {
-        return $this->hasOne(Products::class);
+        return $this->hasMany(Products::class);
     }
 }
