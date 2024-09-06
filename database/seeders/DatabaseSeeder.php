@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
             'city' => 'Surabaya'
         ]);
+        
+        $this->call(UserSeeder::class); 
         $this->call(StoresSeeder::class);
         $this->call(ProductsSeeder::class);
         $this->call(ProductReviewsSeeder::class);
